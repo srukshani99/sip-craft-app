@@ -1,6 +1,7 @@
 # SipCraft App
 
 SipCraft is a basic image-displaying app. Using this app, users can see images featuring a variety of cocktails and add them to their favorite list. Also, users can view the images list they made favorites, and if they want they can remove the images from their favorite list.
+This is a fully responsive app that is designed with the Tailwind framework.
 
 ###### **Version: 1.0.0**
 
@@ -13,7 +14,10 @@ SipCraft is a basic image-displaying app. Using this app, users can see images f
 2. NPM - 10.8.1
 3. Next- 14.2.15
 4. Other NPM Modules - The latest versions have been used in the semantic versioning format.
-   
+
+## Unit Test
+This app includes unit tests with jest and react-testing-library.
+
 ## Project Setup
 You will need node and npm installed globally on your machine.
 
@@ -29,8 +33,7 @@ Clone down the repository and switch to the **sip-craft-app-main** module.
 3. Visit the app:
 `http://localhost:3000` 
 
-
-## Screens
+## Features & Screens
 
 01- Users can see 5 random cocktail images on the Home page by default.
 
