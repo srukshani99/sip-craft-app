@@ -7,7 +7,9 @@ This is a fully responsive app that is designed with the Tailwind framework.
 
 ## Repository
 
-https://github.com/srukshani99/sip-craft-app
+GitHub: https://github.com/srukshani99/sip-craft-app
+
+Google Drive: https://drive.google.com/drive/folders/16HTaOr0qzT0cTCYvbhgikqyEcil_MYuO
 
 ## Technologies Used
 
@@ -23,7 +25,7 @@ https://github.com/srukshani99/sip-craft-app
 ## Unit Test
 This app includes unit tests with jest and react-testing-library.
 
-To run Unit Tests
+To run unit tests
 `npm run test` 
 
 ## Project Setup
