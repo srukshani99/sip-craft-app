@@ -5,7 +5,12 @@ This is a fully responsive app that is designed with the Tailwind framework.
 
 ###### **Version: 1.0.0**
 
+## Repository
+
+https://github.com/srukshani99/sip-craft-app
+
 ## Technologies Used
+
 **sip-craft-app** - This is the main application and it contains both client and server-side modules it is built in NextJS, Typescript, HTML, Tailwind.
 
 ## Version Details
