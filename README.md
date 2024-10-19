@@ -32,7 +32,7 @@ To run unit tests
 You will need node and npm installed globally on your machine.
 
 #### sip-craft-app
-Clone down the repository and switch to the **sip-craft-app-main** module. 
+Clone down the repository and switch to the **sip-craft-app** module. 
 
 1. Install modules:
 `npm install`  
