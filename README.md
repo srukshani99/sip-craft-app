@@ -23,6 +23,9 @@ https://github.com/srukshani99/sip-craft-app
 ## Unit Test
 This app includes unit tests with jest and react-testing-library.
 
+To run Unit Tests
+`npm run test` 
+
 ## Project Setup
 You will need node and npm installed globally on your machine.
 
