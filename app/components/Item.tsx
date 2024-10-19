@@ -14,7 +14,7 @@ const Item = ({ item, handleAddItem }: ItemProps) => {
       <div className="relative ">
         <Image
           src={item.image}
-          alt={'title'}
+          alt={item.name}
           className="rounded-t-lg"
           width={500}
           height={500}
