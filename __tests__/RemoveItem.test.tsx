@@ -12,11 +12,11 @@ describe('RemoveItem Component', () => {
   const mockOnRemoveItemClick = jest.fn();
 
   const cocktailItem: CocktailItem = {
-    id: '323',
-    name: 'Blue Bird',
-    category: 'Cocktail',
-    image: '/bluebird.jpg',
-    createdDate: '',
+    id: '323487',
+    name: 'Kiwi Lemon',
+    category: 'Ordinary Drink',
+    image: '/kiwilemon.jpg',
+    createdDate: '2024-10-19',
     isFavourite: true,
   };
 
@@ -24,7 +24,7 @@ describe('RemoveItem Component', () => {
     jest.clearAllMocks();
   });
 
-  it('renders the heart icon', () => {
+  it('renders the filled favourite icon/button', () => {
     render(<RemoveItem onRemoveItemClick={mockOnRemoveItemClick} cocktailItem={cocktailItem} />);
 
     expect(screen.getByTestId('heart-icon')).toBeInTheDocument();
@@ -46,10 +46,10 @@ describe('RemoveItem Component', () => {
   it('calls onRemoveItemClick when button is clicked', () => {
     render(<RemoveItem onRemoveItemClick={mockOnRemoveItemClick} cocktailItem={cocktailItem} />);
 
-    const button = screen.getByRole('button');
-    fireEvent.click(button);
+    const removeButton = screen.getByRole('button');
+    fireEvent.click(removeButton);
 
-    expect(mockOnRemoveItemClick).toHaveBeenCalledWith('323');
+    expect(mockOnRemoveItemClick).toHaveBeenCalledWith('323487');
     expect(mockOnRemoveItemClick).toHaveBeenCalledTimes(1);
   });
 });

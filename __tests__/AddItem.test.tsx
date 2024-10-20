@@ -13,10 +13,10 @@ describe('AddItem Component', () => {
   const mockOnAddItemClick = jest.fn();
 
   const cocktailItem: CocktailItem = {
-    id: '323',
-    name: 'Blue Bird',
-    category: 'Cocktail',
-    image: '/bluebird.jpg',
+    id: '323487',
+    name: 'Kiwi Lemon',
+    category: 'Ordinary Drink',
+    image: '/kiwilemon.jpg',
     createdDate: '',
     isFavourite: false,
   };
@@ -25,14 +25,14 @@ describe('AddItem Component', () => {
     jest.clearAllMocks();
   });
 
-  it('renders the outline heart icon when item is not a favorite', () => {
+  it('renders the empty favourite icon when item is not a favorite', () => {
     render(<AddItem onAddItemClick={mockOnAddItemClick} cocktailItem={cocktailItem} />);
 
     expect(screen.getByTestId('outline-heart-icon')).toBeInTheDocument();
     expect(screen.queryByTestId('filled-heart-icon')).not.toBeInTheDocument();
   });
 
-  it('renders the filled heart icon when item is a favorite', () => {
+  it('renders the filled favourite icon when item is a favorite', () => {
     const favoriteCocktailItem = { ...cocktailItem, isFavourite: true };
 
     render(<AddItem onAddItemClick={mockOnAddItemClick} cocktailItem={favoriteCocktailItem} />);
@@ -57,8 +57,8 @@ describe('AddItem Component', () => {
   it('calls onAddItemClick when button is clicked', () => {
     render(<AddItem onAddItemClick={mockOnAddItemClick} cocktailItem={cocktailItem} />);
 
-    const button = screen.getByRole('button');
-    fireEvent.click(button);
+    const addButton = screen.getByRole('button');
+    fireEvent.click(addButton);
 
     expect(mockOnAddItemClick).toHaveBeenCalledWith(cocktailItem);
     expect(mockOnAddItemClick).toHaveBeenCalledTimes(1);

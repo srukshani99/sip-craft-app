@@ -15,7 +15,7 @@ export default async function Home({
       <main className="flex-grow">
         <section className="py-8">
           <div className="container mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4 text-white">Welcome to SipCraft</h1>
+            <h1 className="text-3xl font-bold mb-4 text-white">Welcome to sipcraft</h1>
             <p className="mb-8 text-gray-300 text-md mx-10">Explore a curated collection of high-quality images featuring a variety of cocktails, from classic favorites to modern creations.</p>
           </div>
           <Search />

@@ -13,7 +13,7 @@ describe('Refresh Component', () => {
     expect(screen.getByTestId('refresh-icon')).toBeInTheDocument();
   });
 
-  it('displays tooltip on hover', () => {
+  it('displays tooltip when hovered over the button', () => {
     render(<Refresh onRefreshClick={jest.fn()} />);
     const button = screen.getByRole('button');
 
@@ -24,12 +24,12 @@ describe('Refresh Component', () => {
     expect(screen.queryByText('Refresh items')).not.toBeInTheDocument();
   });
 
-  it('calls onRefreshClick when clicked', () => {
+  it('calls onRefreshClick when button is clicked', () => {
     const mockOnClick = jest.fn();
     render(<Refresh onRefreshClick={mockOnClick} />);
 
-    const button = screen.getByRole('button');
-    fireEvent.click(button);
+    const refreshButton = screen.getByRole('button');
+    fireEvent.click(refreshButton);
     expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 });

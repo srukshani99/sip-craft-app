@@ -27,31 +27,27 @@ describe('Search Component', () => {
   });
 
   // it('updates the URL when typing in the search input', () => {
+  //   (useSearchParams as jest.Mock).mockReturnValue({
+  //     get: jest.fn(() => 'old-query'),
+  //   });
   //   render(<Search />);
 
-  //   // Get the input
   //   const input = screen.getByPlaceholderText('Search your favourite cocktails here...');
 
-  //   // Simulate typing a search term
   //   fireEvent.change(input, { target: { value: 'lemon' } });
 
-  //   // Verify the replace function was called with the updated URL
+  //   console.log('***************** = ', mockReplace);
   //   expect(mockReplace).toHaveBeenCalledWith('/current-path?query=lemon');
   // });
 
   // it('removes the query param when the input is cleared', () => {
   //   render(<Search />);
 
-  //   // Get the input
   //   const input = screen.getByPlaceholderText('Search your favourite cocktails here...');
 
-  //   // Simulate typing a search term
   //   fireEvent.change(input, { target: { value: 'lemon' } });
-
-  //   // Simulate clearing the input
   //   fireEvent.change(input, { target: { value: '' } });
 
-  //   // Verify the replace function was called with the updated URL without the query param
   //   expect(mockReplace).toHaveBeenCalledWith('/current-path');
   // });
 

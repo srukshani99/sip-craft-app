@@ -17,7 +17,7 @@ const FavouriteItem = ({ cocktailItem, handleRemoveItemClick }: FavouriteItemPro
   return (
     <div className="flex flex-row bg-neutral-800 shadow-md rounded-lg overflow-hidden p-4">
       <div className="w-1/2">
-        <Image src={cocktailItem.image} alt={'title'} className="w-full h-64 object-cover" width={500} height={500} />
+        <Image src={cocktailItem.image} alt={cocktailItem.name} className="w-full h-64 object-cover" width={500} height={500} />
       </div>
       <div className="p-4 w-1/2 flex flex-col justify-between">
         <div className="flex-grow">
